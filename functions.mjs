@@ -55,3 +55,24 @@ console.log('Arrow function: next -> ', next(3))
 
 // "automatic semicolon insertion" - JavaScript lägger automatiskt till semikolon ; när det behövs
 // Ctrl + ' (apostrof) för att kommentera flera rader
+
+
+
+let q = 1  // global variabel
+var r = 1  // global variabel
+{
+	let q = 20  // lokal variabel som skymmer den globala
+	var r = 20  // refererar till samma globala variabel r
+	console.log('q inuti: ', q)
+	console.log('r inuti: ', r)
+}
+console.log('q utanför: ', q)
+console.log('r utanför: ', r)
+
+
+// Vanligen lägger man sina import överst i filen
+// Kom ihåg att antingen kalla filerna för *.mjs eller använda en package.json
+// Skapa package.json med: npm init -y
+import { moduleHello } from './modul.mjs'
+
+moduleHello()
