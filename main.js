@@ -46,7 +46,7 @@ if( length > 130 ) {
 
 // while, for
 let count = 0
-while( count < 5 ) { 
+while( count < 5 ) {
 	console.log('Loop', count)
 	count++  // count = count + 1
 }
